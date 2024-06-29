@@ -1,0 +1,345 @@
+/* Landpage */
+#landpage{
+background-image:url(./Image/landpage.jpg);
+background-size: cover;
+}
+
+.logo{
+height: 55px;
+width: 55px;
+transition: transform 400ms ease-in;
+&:hover{
+transform:scaleX(-1);
+}
+}
+
+#navbar{
+background-image: linear-gradient(to right,rgba(40, 54, 24, 0.6), rgb(96, 108, 56, 0.6));
+}
+
+.nav-item{
+margin-right: 15vh;
+font-family: "Oswald", sans-serif;
+transition: all 500ms ease-in-out;
+&:hover{
+font-weight: 900;
+}
+}
+
+#oiseaux-menu, #papillons-menu, #libellules-menu{
+color: aliceblue;
+font-family: "Oswald", sans-serif;
+}
+
+.dropdown-menu{
+background-color:rgba(40, 54, 24, 0.5);
+ top: 100%;
+transform: translateY(15px);
+}
+
+.dropdown-menu a {
+color: aliceblue;
+font-family: "Oswald", sans-serif;
+}
+
+#titre-landpage{
+font-size: 3rem;
+color: aliceblue;
+margin: 3vh 5vh 0 5vh;
+font-family: "Galada", cursive;
+text-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.8);
+}
+
+#description-landpage{
+color: aliceblue;
+text-shadow: 0 0.2em 0.4em rgba(0, 0, 0,0.8);
+font-family: "Oswald";
+font-size: 1.3rem;
+}
+
+@keyframes ouverture {
+    from {
+        padding: 0.6em 0em 0.6em 0em;
+        opacity: 0;
+        ;
+    }
+
+    to {
+        padding: 0.6em 4em 0.6em 4em;
+        opacity: 1;
+    }
+}
+
+#btn-decouverte{
+background-color:  #606C38;
+color: aliceblue;
+padding: 0.6em 4em 0.6em 4em;
+border: 0.2vh solid #283618;
+font-family: "Galada", cursive;
+font-size: 1.1rem;
+opacity: 0;
+transition: all 400ms ease-in-out;
+animation: ouverture 2s ease-in-out;
+animation-delay: 2s;
+animation-fill-mode: forwards;
+&:hover{
+    background-color: #DDA15E;
+    border: 0.3vh solid #dfb27e;
+   transform: scale(1.1);
+}
+}
+
+
+#contenu-landpage{
+margin-bottom: 60vh;
+}
+
+
+/* Footer */
+#contact, #plans, #mentions {
+text-decoration: none;
+color: aliceblue;
+font-family: "Oswald", sans-serif;
+}
+
+/* Catégorie */
+#body-categorie{
+background-image: radial-gradient(circle, rgba(177, 211, 177, 0.4), rgba(255, 255, 255, 0.6)), url(./Image/categorie.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+h1{
+font-size: 2rem;
+color: #DDA15E;
+font-family: "Galada", cursive;
+}
+
+#categorie-description{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 1.1rem;
+padding: auto;
+margin: 5vh 15vh 0 15vh;
+ background: linear-gradient(45deg, #283618, #606C38);
+        /* Dégradé de couleur */
+background-clip: text;
+        /* Appliquer le dégradé au texte */
+-webkit-background-clip: text;
+        /* Pour les navigateurs WebKit */
+        color: transparent;
+        /* Masquer le texte d'origine */
+}
+
+#categorie{
+padding: 8vh 15vh 8vh 15vh;
+display: flex;
+flex-direction: column;
+}
+
+#cat1{
+background-color: rgba(96, 108, 56, 0.6);
+display: flex;
+flex-direction: row;
+justify-content:left;
+padding: 4vh 20vh 4vh 20vh;
+
+}
+
+#cat2{
+background-color: rgba(87, 98, 51, 0.6);
+display: flex;
+flex-direction: row;
+justify-content: left;
+padding: 4vh 20vh 4vh 20vh;
+}
+
+#cat3{
+background-color: rgba(40, 54, 24, 0.6);
+display: flex;
+flex-direction: row;
+justify-content: left;
+padding: 4vh 20vh 4vh 20vh;
+}
+
+.card {
+    position: relative;
+    width: 40vh;
+    height: 35vh;
+    overflow: hidden;
+    margin-left: 2vh;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover img {
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+.card-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10vh 1vh 10vh 1vh;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(222, 178, 46, 0.7), rgb(96, 108, 56, 0.3));
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-size: 1rem;
+    color: white;
+}
+
+.card:hover .card-text {
+    opacity: 1;
+}
+
+.titre-categorie {
+    font-size: 1.2rem;
+    margin-bottom: 1.5vh;
+    margin-top: 1vh;
+    color: white;
+    font-family: "Galada";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1vh;
+    text-align: center;
+    background-color: transparent;
+}
+
+.btn-test{
+background-color: #DDA15E;
+padding: 0.5vh 1vh ;
+border-radius: 50%;
+transition: all 500ms ease-in-out;
+&:hover{
+background-color: #606C38;
+transform: translateX(1vh);
+}
+}
+
+.btn-test a {
+text-decoration: none;
+}
+
+/* Test responsive */
+@media screen and (max-width: 1470px) and (min-width:1100px) {
+    #categorie {
+        max-width: 100%;
+        padding: 0vh 10vh 0vh 10vh;
+        margin: 5vh;
+    }
+
+    .card-text {
+        padding: 15vh 1vh 10vh 1vh;
+
+    }
+
+}
+
+@media screen and (max-width: 1100px) and (min-width:768px){
+    #categorie {
+        max-width: 100%;
+        padding: 0vh 8vh 0vh 8vh;
+        margin: 5vh;
+        justify-content: center;
+        align-items: center;
+    }.card {
+        margin: 1.5vh;
+        max-width: 100%;
+    }
+    
+    #cat1,
+    #cat2,
+    #cat3 {
+        justify-content: center;
+        padding: 2vh;
+        flex-wrap: wrap;
+    }
+    
+    #categorie-description {
+        margin: 5vh 2vh 0 2vh;
+    }
+    
+    .card-text {
+        padding: 15vh 1vh 10vh 1vh;
+    
+    }
+    }
+
+@media screen and (max-width: 768px) and (min-width:425px) {
+    #categorie {
+        max-width: 100%;
+        padding: 0vh 5vh 0vh 5vh;
+        justify-content: center;
+        align-items: center;
+        margin: 5vh;
+        
+        }
+        
+        .card {
+            margin: 1.5vh;
+            max-width: 100%;
+        }
+        
+        #cat1,
+        #cat2,
+        #cat3 {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2vh;
+        }
+        
+        #categorie-description {
+            margin: 5vh 2vh 0 2vh;
+        }
+        
+        .card-text {
+            padding: 15vh 1vh 10vh 1vh;
+        
+        }
+        }
+
+@media screen and (max-width: 425px) {
+    #categorie {
+        max-width: 100%;
+        padding: 0vh 5vh 0vh 5vh;
+        justify-content: center;
+        align-items: center;
+        margin: 5vh;
+
+    }
+
+    .card {
+        margin: 1.5vh;
+        max-width: 100%;
+    }
+
+    #cat1,
+    #cat2,
+    #cat3 {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2vh;
+    }
+
+    #categorie-description {
+        margin: 5vh 2vh 0 2vh;
+    }
+
+    h1 {
+        margin: 0 2vh 0 2vh;
+    }
+
+    .card-text {
+        padding: 15vh 1vh 10vh 1vh;
+
+    }
+}

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les oiseaux : débutants - WildGuess</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="quizz-question.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body class="body-quizz">
+    <!-- Barre de navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <a href="accueil.html" class="ms-2"><img src="./Image/logo.png" alt="logo" class="logo"></a>
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" id="oiseaux-menu">
+                            Oiseaux
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="landpage-oiseaux-1.html">Niveau 1 (QCM)</a></li>
+                            <li><a class="dropdown-item" href="#">Niveau 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" id="papillons-menu">
+                            Papillons du jour
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Niveau 1 (QCM)</a></li>
+                            <li><a class="dropdown-item" href="#">Niveau 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" id="libellules-menu">
+                            Libellules & Demoiselles
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Niveau 1 (QCM)</a></li>
+                            <li><a class="dropdown-item" href="#">Niveau 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="questions m-5 text-center text-shadow" data-aos="fade-in" data-aos-duration="800">Quel est le nom de
+            ces espèces ?</h1>
+    </header>
+
+    <!-- Question 1-10 -->
+    <section class="quizz-container container" id="section2" data-aos="fade-in" data-aos-duration="800"
+        data-aos-delay="500">
+        <div class="photo-indices">
+            <img src="./Image/Image Oiseaux Quiz/moineau-domestique.jpg" alt="espece1" class="img-quizz img-fluid m-2">
+            <div class="d-flex flex-column">
+                <ul class="liste-indice">
+                    <li>Vit partout en ville et paysages ruraux</li>
+                    <li>Plutôt sédentaire et grégaire</li>
+                    <li>Omnivore et opportuniste</li>
+                    <li>Se reproduit dans le mois de Mars</li>
+                </ul>
+                <audio controls class="chant">
+                    <source src="./Audio/chant-moineau-domestique.mp3" type="audio/mp3">
+            </div>
+
+        </div>
+        <!-- Choix et Validation -->
+        <form class="form-quizz">
+            <section class="text-center" class="reponses">
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q1reponse1" value="Rougegorge familier">
+                    <label for="1reponse1">Rougegorge familier</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q1reponse2" value="Pinson des arbres">
+                    <label for="q1reponse2">Pinson des arbres</label>
+                </div>
+                <div class="choix"> <input type="radio" name="reponse" id="q1reponse3" value="Moineau domestique">
+                    <label for="q1reponse3">Moineau domestique</label>
+                </div>
+                <br>
+                <div class="choix"> <input type="radio" name="reponse" id="q1reponse4" value="Mésange charbonnière">
+                    <label for="q1reponse4">Mésange charbonnière</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q1reponse5" value="Verdier d'Europe">
+                    <label for="q1reponse5">Verdier d'Europe</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q1reponse6" value="Pouillot véloce">
+                    <label for="q1reponse6">Pouillot véloce</label>
+                </div>
+            </section>
+        </form>
+    </section>
+
+
+
+    <!-- Question 2-10 -->
+    <section class=" quizz-container container mt-5" id="section3" data-aos="fade-in" data-aos-duration="800"
+        data-aos-delay="500">
+        <div class="photo-indices">
+            <img src="./Image/Image Oiseaux Quiz/merle-noir.jpg" alt="espece2" class="img-quizz  img-fluid m-2">
+            <div class="d-flex flex-column">
+                <ul class="liste-indice">
+                    <li>Le plus grand turdidé commun</li>
+                    <li>Espèce forestière qui habite également les villes</li>
+                    <li>Régime diversifié mais prédateur d'invertébrés</li>
+                    <li>Se reproduit dès le printemps jusqu'à 3 couvées dans l'année</li>
+                </ul>
+                <audio controls class="chant">
+                    <source src="./Audio/chant-merle-noir.mp3" type="audio/mp3">
+            </div>
+        </div>
+        <!-- Choix et Validation -->
+        <form class="form-quizz">
+            <section class="text-center" class="reponses">
+                <div class="choix"> <input type="radio" name="reponse" id="q2reponse1" value="Mésange charbonnière">
+                    <label for="q2reponse1">Mésange charbonnière</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q2reponse2" value="Merle noir">
+                    <label for="q2reponse2">Merle noir</label>
+                </div>
+                <div class="choix"> <input type="radio" name="reponse" id="q2reponse3" value="Etourneau sansonnet">
+                    <label for="q2reponse3">Etourneau sansonnet</label>
+                </div>
+                <br>
+                <div class="choix"> <input type="radio" name="reponse" id="q2reponse4" value="Corneille noire">
+                    <label for="q2reponse4">Corneille noire</label>
+                </div>
+                <div class="choix"> <input type="radio" name="reponse" id="q2reponse5" value="Choucas des tours">
+                    <label for="q2reponse5">Choucas des tours</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q2reponse6" value="Pie bavarde">
+                    <label for="q2reponse6">Pie bavarde</label>
+                </div>
+            </section>
+        </form>
+    </section>
+
+    <!-- Question 3-10 -->
+    <section class=" quizz-container container mt-5" id="section4" data-aos="fade-in" data-aos-duration="800"
+        data-aos-delay="500">
+        <div class="photo-indices">
+            <img src="./Image/Image Oiseaux Quiz/mesange-charbonniere.jpg" alt="espece3"
+                class="img-quizz  img-fluid m-2">
+            <div class="d-flex flex-column">
+                <ul class="liste-indice">
+                    <li>La plus grande des mésanges connues</li>
+                    <li>Oiseaux forestiers</li>
+                    <li>Régime alimentaire diversifié</li>
+                    <li>Se reproduit d'Avril à Juin</li>
+                </ul>
+                <audio controls class="chant">
+                    <source src="./Audio/chant-mesange-charbonniere.mp3" type="audio/mp3">
+            </div>
+        </div>
+        <!-- Choix et Validation -->
+        <form class="form-quizz">
+            <section class="text-center" class="reponses">
+                <div class="choix"> <input type="radio" name="reponse" id="q3reponse1" value="Mésange charbonnière">
+                    <label for="q3reponse1">Mésange charbonnière</label>
+                </div>
+                <div class="choix"> <input type="radio" name="reponse" id="q3reponse2" value="Mésange bleue">
+                    <label for="q3reponse2">Mésange bleue</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q3reponse3" value="Pigeon ramier">
+                    <label for="q3reponse3">Pigeon ramier</label>
+                </div>
+                <br>
+                <div class="choix"> <input type="radio" name="reponse" id="q3reponse4" value="Mésange à longue queue">
+                    <label for="q3reponse4">Mésange à longue queue</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q3reponse5" value="Fauvette babillarde">
+                    <label for="q3reponse5">Fauvette babillarde</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q3reponse6" value="Fauvette grisette">
+                    <label for="q3reponse6">Fauvette grisette</label>
+                </div>
+            </section>
+        </form>
+    </section>
+
+    <!-- Question 4-10 -->
+    <section class=" quizz-container container mt-5" id="section5" data-aos="fade-in" data-aos-duration="800"
+        data-aos-delay="500">
+        <div class="photo-indices">
+            <img src="./Image/Image Oiseaux Quiz/pouillot-veloce.jpg" alt="espece4" class="img-quizz  img-fluid m-2">
+            <div class="d-flex flex-column">
+                <ul class="liste-indice">
+                    <li>Espèce forestière</li>
+                    <li>Majoritairement insectivore</li>
+                    <li>Il niche au sol</li>
+                    <li>Caractérisé par un battement nerveux</li>
+                </ul>
+                <audio controls class="chant">
+                    <source src="./Audio/chant-pouillot-veloce.mp3" type="audio/mp3">
+            </div>
+        </div>
+        <!-- Choix et Validation -->
+        <form class="form-quizz">
+            <section class="text-center" class="reponses">
+                <div class="choix"> <input type="radio" name="reponse" id="q4reponse1" value="Rougequeue à front blanc">
+                    <label for="q4reponse1">Rougequeue à front blanc</label>
+                </div>
+                <div class="choix"> <input type="radio" name="reponse" id="q4reponse2" value="Mésange bleue">
+                    <label for="q4reponse2">Mésange bleue</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q4reponse3" value="Pouillot véloce">
+                    <label for="q4reponse3">Pouillot véloce</label>
+                </div>
+                <br>
+                <div class="choix"> <input type="radio" name="reponse" id="q4reponse4" value="Pinson des arbres">
+                    <label for="q4reponse4">Pinson des arbres</label>
+                </div>
+                <div class="choix"> <input type="radio" name="reponse" id="q4reponse5" value="Moineau domestique">
+                    <label for="q4reponse5">Moineau domestique</label>
+                </div>
+                <div class="choix"> <input type="radio" name="reponse" id="q4reponse6" value="Bruant des roseaux">
+                    <label for="q4reponse6">Bruant des roseaux</label>
+                </div>
+            </section>
+        </form>
+    </section>
+
+    <!-- Question 5-10 -->
+    <section class=" quizz-container container mt-5" id="section6" data-aos="fade-in" data-aos-duration="800"
+        data-aos-delay="500">
+        <div class="photo-indices">
+            <img src="./Image/Image Oiseaux Quiz/troglodyte-mignon.jpg" alt="espece5" class="img-quizz  img-fluid m-2">
+            <div class="d-flex flex-column">
+                <ul class="liste-indice">
+                    <li>Un des plus petit passereau</li>
+                    <li>Espèce forestière</li>
+                    <li>Il niche adossé à une paroi dans un nid en boule</li>
+                    <li>Régime insectivore</li>
+                </ul>
+                <audio controls class="chant">
+                    <source src="./Audio/chant-troglodyte.mp3" type="audio/mp3">
+            </div>
+        </div>
+        <!-- Choix et Validation -->
+        <form class="form-quizz">
+            <section class="text-center" class="reponses">
+                <div class="choix"> <input type="radio" name="reponse" id="q5reponse1" value="Pouillot véloce">
+                    <label for="q5reponse1">Pouillot véloce</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q5reponse2" value="Accenteur mouchet">
+                    <label for="q5reponse2">Accenteur mouchet</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q5reponse3" value="Rossignol philomèle">
+                    <label for="q5reponse3">Rossignol philomèle</label>
+                </div>
+                <br>
+                <div class="choix"> <input type="radio" name="reponse" id="q5reponse4" value="Pinson des arbres">
+                    <label for="q5reponse4">Pinson des arbres</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q5reponse5" value="Fauvette à tête noire">
+                    <label for="q5reponse5">Fauvette à tête noire</label>
+                </div>
+                <div class="choix"> <input type="radio" name="reponse" id="q5reponse6" value="Troglodyte mignon">
+                    <label for="q5reponse6">Troglodyte mignon</label>
+                </div>
+            </section>
+        </form>
+    </section>
+
+    <!-- Question 6-10 -->
+    <section class=" quizz-container container mt-5" id="section7" data-aos="fade-in" data-aos-duration="800"
+        data-aos-delay="500">
+        <div class="photo-indices">
+            <img src="./Image/Image Oiseaux Quiz/rougegorge.jpg" alt="espece6" class="img-quizz  img-fluid m-2">
+            <div class="d-flex flex-column">
+                <ul class="liste-indice">
+                    <li>Il a un comportement très territorial</li>
+                    <li>Espèce forestière</li>
+                    <li>Il se reproduit dès fin Mars jusqu'à Août</li>
+                    <li>Régime insectivore</li>
+                </ul>
+                <audio controls class="chant">
+                    <source src="./Audio/chant-rougegorge.mp3" type="audio/mp3">
+            </div>
+        </div>
+        <!-- Choix et Validation -->
+        <form class="form-quizz">
+            <section class="text-center" class="reponses">
+                <div class="choix"> <input type="radio" name="reponse" id="q6reponse1" value="Tourterelle turque">
+                    <label for="q6reponse1">Tourterelle turque</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q6reponse2" value="Pigeon biset">
+                    <label for="q6reponse2">Pigeon biset</label>
+                </div>
+                <div class="choix"> <input type="radio" name="reponse" id="q6reponse3" value="Fauvette à tête noire">
+                    <label for="q6reponse3">Fauvette à tête noire</label>
+                </div>
+                <br>
+                <div class="choix"> <input type="radio" name="reponse" id="q6reponse4" value="Pinson des arbres">
+                    <label for="q6reponse4">Pinson des arbres</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q6reponse5" value="Rougegorge familier">
+                    <label for="q6reponse5">Rougegorge familier</label>
+                </div>
+                <div class="choix"> <input type="radio" name="reponse" id="q6reponse6" value="Rousserolle effarvate">
+                    <label for="q6reponse6">Rousserolle effarvate</label>
+                </div>
+            </section>
+        </form>
+    </section>
+
+    <!-- Question 7-10 -->
+    <section class="quizz-container container mt-5" id="section8" data-aos="fade-in" data-aos-duration="800"
+        data-aos-delay="500">
+        <div class="photo-indices">
+            <img src="./Image/Image Oiseaux Quiz/pinson-des-arbres.jpg" alt="espece7" class="img-quizz img-fluid m-2">
+            <div class="d-flex flex-column">
+                <ul class="liste-indice">
+                    <li>Vit en milieux arborés</li>
+                    <li>Oiseau plutôt grégaire</li>
+                    <li>Régime omnivore</li>
+                    <li>Reproduction dès le mois de Mars</li>
+                </ul>
+                <audio controls class="chant">
+                    <source src="./Audio/chant-pinson-des-arbres.mp3" type="audio/mp3">
+            </div>
+        </div>
+        <!-- Choix et Validation -->
+        <form class="form-quizz">
+            <section class="text-center" class="reponses">
+                <div class="choix"> <input type="radio" name="reponse" id="q7reponse1" value="Bouvreuil pivoine">
+                    <label for="q7reponse1">Bouvreuil pivoine</label>
+                </div>
+                <div class="choix"> <input type="radio" name="reponse" id="q7reponse2" value="Mésange charbonnière">
+                    <label for="q7reponse2">Mésange charbonnière</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q7reponse3" value="Fauvette des jardins">
+                    <label for="q7reponse3">Fauvette des jardins</label>
+                </div>
+                <br>
+                <div class="choix"> <input type="radio" name="reponse" id="q7reponse4" value="Pinson des arbres">
+                    <label for="q7reponse4">Pinson des arbres</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q7reponse5" value="Grive draine">
+                    <label for="q7reponse5">Grive draine</label>
+                </div>
+                <div class="choix"> <input type="radio" name="reponse" id="q7reponse6" value="Troglodyte mignon">
+                    <label for="q7reponse6">Troglodyte mignon</label>
+                </div>
+            </section>
+        </form>
+    </section>
+
+    <!-- Question 8-10 -->
+    <section class=" quizz-container container mt-5" id="section9" data-aos="fade-in" data-aos-duration="800"
+        data-aos-delay="500">
+        <div class="photo-indices">
+            <img src="./Image/Image Oiseaux Quiz/mesange-bleue.jpg" alt="espece8" class="img-quizz img-fluid m-2">
+            <div class="d-flex flex-column">
+                <ul class="liste-indice">
+                    <li>Espèce forestière</li>
+                    <li>Territorial en saison de reproduction</li>
+                    <li>Régime insectivore</li>
+                    <li>Reproduction d'Avril à Juillet</li>
+                </ul>
+                <audio controls class="chant">
+                    <source src="./Audio/chant-mesange-bleue.mp3" type="audio/mp3">
+            </div>
+        </div>
+        <!-- Choix et Validation -->
+        <form class="form-quizz">
+            <section class="text-center" class="reponses">
+                <div class="choix"> <input type="radio" name="reponse" id="q8reponse1" value="Geai des chênes">
+                    <label for="q8reponse1">Geai des chênes</label>
+                </div>
+                <div class="choix"> <input type="radio" name="reponse" id="q8reponse2" value="Mésange charbonnière">
+                    <label for="q8reponse2">Mésange charbonnière</label>
+                </div>
+                <div class="choix"> <input type="radio" name="reponse" id="q8reponse3" value="Mésange bleue">
+                    <label for="q8reponse3">Mésange bleue</label>
+                </div>
+                <br>
+                <div class="choix"> <input type="radio" name="reponse" id="q8reponse4" value="Hirondelle des fenêtres">
+                    <label for="q8reponse4">Hirondelle des fenêtres</label>
+                </div>
+                <div class="choix"> <input type="radio" name="reponse" id="q8reponse5" value="Chardonneret élégant">
+                    <label for="q8reponse5">Chardonneret élégant</label>
+                </div>
+                <div class="choix"> <input type="radio" name="reponse" id="q8reponse6" value="Verdier d'Europe">
+                    <label for="q8reponse6">Verdier d'Europe</label>
+                </div>
+            </section>
+        </form>
+    </section>
+
+    <!-- Question 9-10 -->
+    <section class=" quizz-container container mt-5" id="section10" data-aos="fade-in" data-aos-duration="800"
+        data-aos-delay="500">
+        <div class="photo-indices">
+            <img src="./Image/Image Oiseaux Quiz/choucas-des-tours.jpg" alt="espece9" class="img-quizz img-fluid m-2">
+            <div class="d-flex flex-column">
+                <ul class="liste-indice">
+                    <li>Plus petit des corvidés noir</li>
+                    <li>Oiseau des espaces ouverts</li>
+                    <li>Régime omnivore</li>
+                    <li>La période de nidification commence en avril au sud, en mai pour les migratrices</li>
+                </ul>
+                <audio controls class="chant">
+                    <source src="./Audio/chant-choucas.mp3" type="audio/mp3">
+            </div>
+        </div>
+        <!-- Choix et Validation -->
+        <form class="form-quizz">
+            <section class="text-center" class="reponses">
+                <div class="choix"> <input type="radio" name="reponse" id="q9reponse1" value="Merle noir">
+                    <label for="q9reponse1">Merle noir</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q9reponse2" value="Pie bavarde">
+                    <label for="q9reponse2">Pie bavarde</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q9reponse3" value="Corneille noire">
+                    <label for="q9reponse3">Corneille noire</label>
+                </div>
+                <br>
+                <div class="choix"> <input type="radio" name="reponse" id="q9reponse4" value="Hirondelle des rivages">
+                    <label for="q9reponse4">Hirondelle des rivages</label>
+                </div>
+                <div class="choix"> <input type="radio" name="reponse" id="q9reponse5" value="Grive musicienne">
+                    <label for="q9reponse5">Grive musicienne</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q9reponse6" value="Choucas des tours">
+                    <label for="q9reponse6">Choucas des tours</label>
+                </div>
+            </section>
+        </form>
+    </section>
+
+    <!-- Question 10-10 -->
+    <section class=" quizz-container container mt-5" id="section11">
+        <div class="photo-indices">
+            <img src="./Image/Image Oiseaux Quiz/grimpereau.jpg" alt="espece10" class="img-quizz img-fluid m-2">
+            <div class="d-flex flex-column">
+                <ul class="liste-indice">
+                    <li>Petit passereau arboricole et corticole</li>
+                    <li>Oiseau forestier</li>
+                    <li>Reconnaissable à sa façon de se déplacer sur les arbres</li>
+                    <li>Il se reproduit de Mars à Juillet</li>
+                </ul>
+                <audio controls class="chant">
+                    <source src="./Audio/chant-grimpereau-jardins.mp3" type="audio/mp3">
+            </div>
+        </div>
+        <!-- Choix et Validation -->
+        <form class="form-quizz">
+            <section class="text-center" class="reponses">
+                <div class="choix"> <input type="radio" name="reponse" id="q10reponse1" value="Grive mauvis">
+                    <label for="q10reponse1">Grive mauvis</label>
+                </div>
+                <div class="choix"><input type="radio" name="reponse" id="q10reponse2" value="Grimpereau des jardins">
+                    <label for="q10reponse2">Grimpereau des jardins</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q10reponse3" value="Moineau friquet">
+                    <label for="q10reponse3">Moineau friquet</label>
+                </div>
+                <br>
+                <div class="choix"><input type="radio" name="reponse" id="q10reponse4" value="Pouillot verdâtre">
+                    <label for="q10reponse4">Pouillot verdâtre</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q10reponse5" value="Accenteur mouchet">
+                    <label for="q10reponse5">Accenteur mouchet</label>
+                </div>
+                <div class="choix">
+                    <input type="radio" name="reponse" id="q10reponse6" value="Bruant zizi">
+                    <label for="q10reponse6">Bruant zizi</label>
+                </div>
+            </section>
+        </form>
+    </section>
+
+    <div class="text-center m-5"><a href="resultat.html"><button class="envoyez-reponses submit rounded-pill"
+                onclick="validateAnswer()">Validez
+                mes réponses</button></a>
+    </div>
+
+    <div id="alerte" class="text-center fs-6">N'oublie pas de questions. Celles oubliées sont encadrées en rouge !</div>
+
+    <!-- Footer en bas de page -->
+
+    <footer class=" d-flex justify-content-evenly mt-3" id="footer">
+        <div class=" d-flex justify-content-start ">
+            <a href=""><i class="fa-brands fa-facebook fa-lg me-2" style="color: white;" id="fb"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram fa-lg" style="color: white;" id="insta"></i></a>
+        </div>
+        <a href="" id="mentions">Mentions légales et Crédits</a>
+        <a href="" id="plans">Plan du site</a>
+        <a href="" id="contact">Contact</a>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="quizz.js"></script>
+    <script src="question-repondu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,374 @@
+/* NavBar */
+.logo {
+    height: 55px;
+    width: 55px;
+    transition: transform 400ms ease-in;
+    &:hover {
+        transform: scaleX(-1);
+    }
+}
+
+#navbar {
+    background-image: linear-gradient(to right, rgba(40, 54, 24, 0.6), rgb(96, 108, 56, 0.6));
+    position: sticky;
+}
+
+.nav-item {
+    margin-right: 15vh;
+    font-family: "Oswald";
+    transition: all 500ms ease-in-out;
+    &:hover {
+        font-weight: 900;
+    }
+}
+
+#oiseaux-menu,
+#papillons-menu,
+#libellules-menu {
+    color: aliceblue;
+    font-family: "Oswald", sans-serif;
+}
+
+.dropdown-menu {
+    background-color: rgba(40, 54, 24, 0.5);
+    top: 100%;
+    transform: translateY(15px);
+}
+
+.dropdown-menu a {
+    color: aliceblue;
+    font-family: "Oswald", sans-serif;
+}
+
+/* Footer */
+#contact,
+#plans,
+#mentions {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: "Oswald", sans-serif;
+}
+
+/* Fond animé */
+#fond-anime-oiseaux-1{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+object-fit: cover;
+z-index: -1;
+}
+
+/* Quiz */
+
+.body-quizz{
+background-image: radial-gradient(circle, rgba(221, 162, 94, 0.2),rgba(255, 255, 255,0.6)), url(./Image/categorie.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+margin: 0;
+padding: 0;
+width: 100%;
+}
+
+#landpage-oiseaux-1 {
+ position: relative;
+z-index: 1;
+}
+
+#contenu-landpage {
+margin-top: 10vh;
+ margin-bottom: 50vh;
+}
+
+#titre-quizz {
+font-size: 60px;
+color: #DDA15E;
+font-family: "Galada", cursive;
+}
+
+#description-landpage-oiseaux {
+color: white;
+font-family: "Galada";
+font-size: 25px;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1); opacity: 1;
+        ;
+    }
+
+    50% {
+        transform: scale(1.5); opacity: 1;
+    }
+
+    to {
+        transform: scale(1); opacity: 1;
+    }
+}
+
+#go {
+    color: #DDA15E;
+    font-family: "Galada", cursive;
+    text-decoration: none;
+    font-size: 30px;
+    display: inline-block;
+    opacity: 0;
+    animation: pulse 2s ease-in-out infinite;
+    animation-delay: 2s;
+    transition: all 400ms ease-in-out;
+    &:hover{
+    color: #606C38;
+    }
+}
+.quizz-container {
+    background-color: rgba(96, 108, 56, 0.5);
+    width: 80%;
+    height: 100%;
+    border-radius: 1vh;
+    border: 0.3vh solid #6b7a38;
+    padding: 3vh 0 5vh 3vh;
+}
+
+.quizz-container.pasrepondu {
+    border: 0.3vh solid red;
+}
+
+.quizz-container.repondu {
+    border: 0.3vh solid #606C38;
+}
+
+.photo-indices{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.questions {
+    font-size: 3rem;
+    color: aliceblue;
+    margin: 0 5vh 1vh 5vh;
+    text-shadow: 0.5vh 1vh 1vh rgba(0, 0, 0, 0.5);
+    font-family: "Galada", cursive;
+}
+
+.liste-indice {
+    margin: 2vh;
+    list-style-image: url(./Image/feather.png);
+    color: aliceblue;
+    font-size: 1.1rem;
+}
+
+.liste-indice li{
+margin-bottom: 0.7vh;
+}
+
+.form-quizz{
+margin-top: 5%;
+}
+
+.choix{
+display: inline-block;
+}
+
+label{
+font-size: 1.3rem;
+color: black;
+margin: 0 2vh 1vh 2vh;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+display: inline-block;
+transition: all 400ms ease-in-out;
+&:hover{
+color: red;
+
+}
+}
+
+input[type="radio"]:checked+label {
+    color: red;
+}
+
+.chant {
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+
+.img-quizz {
+    width: 50vh;
+    height: 35vh;
+    border-radius: 2rem 1.5rem 0 1.5rem;
+    box-shadow: 0.8vh 0.8vh 0.5vh rgba(0, 0, 0, 0.5);
+    margin-top: 2vh;
+    object-fit: cover;
+}
+
+
+.envoyez-reponses {
+    background-color: #606C38;
+    padding: 1vh 10vh 1vh 10vh;
+    font-size: 1.1rem;
+    transition: all 400ms ease;
+    color: aliceblue;
+    font-family: "Galada", cursive;
+    &:hover {
+        background-color: #DDA15E;
+        border: 0.3vh solid #dfb27e;
+        transform: scale(1.1);
+    }
+}
+
+#corrections{
+border: 0.2vh solid #DDA15E;
+font-size: 1rem;
+}
+
+table th{
+background-color: rgba(184, 150, 77, 0.5);
+}
+
+@keyframes ouverture {
+    from {
+        padding: 0.6em 0em 0.6em 0em;
+        opacity: 0;
+        ;
+    }
+
+    to {
+        padding: 0.6em 2em 0.6em 2em;
+        opacity: 1;
+    }
+}
+
+#btn-decouverte2 {
+    background-color: #93a654;
+    color: aliceblue;
+    padding: 0.6em 2em 0.6em 2em;
+    border: 0.2vh solid #283618;
+    font-family: "Galada", cursive;
+    font-size: 1rem;
+    opacity: 0;
+    transition: all 400ms ease-in-out;
+    animation: ouverture 2s ease-in-out;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+    &:hover {
+        background-color: #DDA15E;
+        border: 0.3vh solid #dfb27e;
+        transform: scale(1.1);
+    }
+}
+
+#titre-result{
+font-family: "Galada", cursive;
+font-size: 3rem;
+color: #606C38;
+text-align: center;
+}
+
+/* Test responsive */
+@media screen and (max-width: 992px) and (min-width:768px) {
+    .col {
+        margin: auto;
+    }
+
+    .questions {
+        text-align: center;
+    }
+
+    #body-quizz {
+        width: 100%;
+    }
+
+    .liste-indice,
+    .chant {
+        margin-left: 10vh;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width:600px) {
+    #body-quizz {
+        width: 100%;
+    }
+
+    .liste-indice,
+    .chant {
+        margin-top: 2vh;
+        max-width: 100%; 
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-quizz {
+        margin: 0 10vh 0 10vh;
+        max-width: 100%;
+        width: 80%;
+        object-fit: fill;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width:425px){
+    #body-quizz {
+        width: 100%;
+    }
+
+        .questions {
+            font-size: 2.3rem;
+        }
+    
+        .img-quizz {
+            width: 80%;
+            margin: 5vh;
+        }
+    
+        label {
+            font-size: 1.1rem;
+        }
+    
+        .chant {
+            margin-top: 5vh;
+            max-width: 100%;
+            width: 80%;
+        }
+        }
+
+@media screen and (max-width:425px) {
+    #body-quizz {
+        width: 100%;
+    }
+
+    .questions {
+        font-size: 2.5rem;
+    }
+    
+    .img-quizz {
+        width: 25vh;
+        height: 25vh;
+        border-radius: 50%;
+        object-fit: fill;
+    }
+    
+    .chant {
+        margin-top: 1vh;
+        margin-bottom:1vh;
+        max-width: 100%;
+        width: 80%;
+    }
+    
+    label {
+        font-size: 1.1rem;
+    }
+}
